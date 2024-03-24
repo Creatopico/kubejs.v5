@@ -1,4 +1,4 @@
 StartupEvents.registry('item', e => {
-    e.create('ammomia_bottle').displayName('Бутылочка аммиака')
+    e.create('ammonia_bottle').displayName('Бутылочка аммиака')
 })
   
