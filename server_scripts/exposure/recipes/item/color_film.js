@@ -1,9 +1,18 @@
 ServerEvents.recipes(event => {
-    event.shapeless('1x exposure:color_film', [ // arg 1: output
-      'minecraft:paper',
-      'kubejs:nitric_acid_bottle',
-      'minecraft:reg_dye',
-      'minecraft:green_dye',
-      'minecraft:blue_dye'
-    ])
+  event.remove({ output: 'exposure:color_film' })
+	event.shaped(
+        Item.of('exposure:color_film', 1), // arg 1: output
+        [
+          'PN ',
+          'RGB', // arg 2: the shape (array of strings)
+          '   '
+        ], 
+        {
+          P: 'minecraft:paper',
+          N: 'kubejs:nitric_acid_bottle',
+          R: 'minecraft:red_dye',
+          G: 'minecraft:green_dye',
+          B: 'minecraft:blue_dye'
+        }
+    )
 })

@@ -11,16 +11,19 @@ ServerEvents.recipes(event => {
               "item": "kubejs:hydrochloric_acid_bucket"
             },
             I: {
-              "item": "kubejs:sulfur_acid_bucket"
+              "item": "kubejs:sulfuric_acid_bucket"
             },
             P: {
               "item": "kubejs:plastic"
+            },
+            C: {
+              "item": "createaddition:capacitor"
             }
           },
           pattern: [
-            "PPPPPPP",
-            "PNHNINP",
-            "PPPPPPP",
+            "NPPPN",
+            "CHNIC",
+            "NPPPN",
           ],
           result: {
             count: 1,

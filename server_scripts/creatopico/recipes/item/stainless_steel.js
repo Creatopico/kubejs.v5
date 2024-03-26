@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
 	  ingredients: [
 		Item.of('kubejs:nickel_ingot').toJson(),
 		Item.of('kubejs:tungsten_ingot').toJson(),
-		Item.of('kubejs:steel_ingot').toJson()=
+		Item.of('kubejs:steel_ingot').toJson()
 	  ],
 	  results: [Item.of('kubejs:stainless_steel').toJson()]
     })
