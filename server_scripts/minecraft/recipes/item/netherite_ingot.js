@@ -1,0 +1,102 @@
+ServerEvents.recipes(event => {
+    event.remove({ output: 'create:sturdy_sheet' })
+
+	event.custom({
+		type: 'create:sequenced_assembly',
+		ingredient: {
+		  item: 'minecraft:netherite_scrap'
+		},
+		loops: 4,
+		results: [
+		  {
+			item: 'minecraft:netherite_ingot'
+		  }
+		],
+		sequence: [
+		  {
+			type: 'create:filling',
+			ingredients: [
+			  {
+				item: 'kubejs:unprocessed_netherite_ingot'
+			  },
+			  {
+				amount: 40500,
+				fluid: 'minecraft:lava',
+				nbt: {}
+			  }
+			],
+			results: [
+			  {
+				item: 'kubejs:unprocessed_netherite_ingot'
+			  }
+			]
+		  },
+		  {
+			type: "create:deploying",
+			ingredients: [
+			  {
+				item: "kubejs:unprocessed_netherite_ingot"
+			  },
+			  {
+				item:  "kubejs:carbon_fiber"
+			  }
+			],
+			results: [
+			  {
+				item: "kubejs:unprocessed_netherite_ingot"
+			  }
+			]
+		  },
+          {
+			type: 'create:filling',
+			ingredients: [
+			  {
+				item: 'kubejs:unprocessed_netherite_ingot'
+			  },
+			  {
+				amount: 40500,
+				fluid: 'minecraft:lava',
+				nbt: {}
+			  }
+			],
+			results: [
+			  {
+				item: 'kubejs:unprocessed_netherite_ingot'
+			  }
+			]
+		  },
+		  {
+			type: "create:deploying",
+			ingredients: [
+			  {
+				item: "kubejs:unprocessed_netherite_ingot"
+			  },
+			  {
+				item: "kubejs:stainless_steel"
+			  }
+			],
+			results: [
+			  {
+				item: "kubejs:unprocessed_netherite_ingot"
+			  }
+			]
+		  },
+		  {
+			type: 'create:pressing',
+			ingredients: [
+			  {
+				item: 'kubejs:unprocessed_netherite_ingot'
+			  }
+			],
+			results: [
+			  {
+				item: 'kubejs:unprocessed_netherite_ingot'
+			  }
+			]
+		  }
+		],
+		transitionalItem: {
+		  item: 'kubejs:unprocessed_netherite_ingot'
+		}
+	  })
+})

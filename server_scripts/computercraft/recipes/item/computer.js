@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
             A: {
               "item": "createaddition:modular_accumulator"
             },
-            A: {
+            C: {
               "item": "createaddition:capacitor"
             }
           },

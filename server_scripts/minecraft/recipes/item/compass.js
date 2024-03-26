@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 	event.replaceInput(
 		{ output: 'minecraft:compass' },
-		'create:iron_ingot',
+		'minecraft:iron_ingot',
 		Ingredient.of('kubejs:magnetic_pyrite')
 	)
 
