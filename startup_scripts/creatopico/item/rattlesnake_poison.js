@@ -6,7 +6,7 @@ StartupEvents.registry('item', event => {
              * "crossbow", "eat" (food), "spyglass", "block", "none", "bow", "drink"
              * When using certain animations, corresponding sound will be played.
              */
-        .useAnimation("eat")
+        .useAnimation("drink")
             /**
              * The duration before the item finishs its using,
              * if you need something like hold-and-charge time (like bow),
