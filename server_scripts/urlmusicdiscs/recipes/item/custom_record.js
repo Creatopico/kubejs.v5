@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+    event.remove({ output: 'urlmusicdiscs:custom_record' })
+
     let music_disc = (disc) => {
         event.shapeless('1x urlmusicdiscs:custom_record', [ disc ])
     }

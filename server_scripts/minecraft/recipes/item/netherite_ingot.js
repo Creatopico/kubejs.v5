@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 	event.custom({
 		type: 'create:sequenced_assembly',
 		ingredient: {
-		  item: 'minecraft:netherite_scrap'
+		  item: 'minecraft:gold_ingot'
 		},
 		loops: 4,
 		results: [
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 				item: "kubejs:unprocessed_netherite_ingot"
 			  },
 			  {
-				item:  "kubejs:carbon_fiber"
+				item: "minecraft:netherite_scrap"
 			  }
 			],
 			results: [
@@ -47,21 +47,19 @@ ServerEvents.recipes(event => {
 			  }
 			]
 		  },
-          {
-			type: 'create:filling',
+		  {
+			type: "create:deploying",
 			ingredients: [
 			  {
-				item: 'kubejs:unprocessed_netherite_ingot'
+				item: "kubejs:unprocessed_netherite_ingot"
 			  },
 			  {
-				amount: 40500,
-				fluid: 'minecraft:lava',
-				nbt: {}
+				item:  "kubejs:carbon_fiber"
 			  }
 			],
 			results: [
 			  {
-				item: 'kubejs:unprocessed_netherite_ingot'
+				item: "kubejs:unprocessed_netherite_ingot"
 			  }
 			]
 		  },
