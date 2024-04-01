@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 	event.shaped(
-        Item.of('createoreexcavator:drill', 1), // arg 1: output
+        Item.of('createoreexcavation:drill', 1), // arg 1: output
         [
           ' S ',
           'SCS', // arg 2: the shape (array of strings)

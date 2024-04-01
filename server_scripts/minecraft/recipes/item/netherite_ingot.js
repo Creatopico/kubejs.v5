@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.remove({ output: 'create:sturdy_sheet' })
+    event.remove({ output: 'minecraft:netherite_ingot' })
 
 	event.custom({
 		type: 'create:sequenced_assembly',
